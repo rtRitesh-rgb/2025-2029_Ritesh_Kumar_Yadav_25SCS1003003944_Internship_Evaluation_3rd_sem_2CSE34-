@@ -16,11 +16,11 @@ The project focuses on extracting and analyzing financial data from SEC 10-K fil
 
 **Ritesh Kumar Yadav**
 
-- 🎓 B.Tech Computer Science & Engineering
-- 🏫 IILM University, Greater Noida
-- 📚 2nd Year | Section: 2CSE34
-- 🆔 Roll No.: 25SCS1003003944
-- 🎓 Batch: 2025–2029
+- 🎓 **Degree:** B.Tech Computer Science & Engineering
+- 🏫 **University:** IILM University, Greater Noida
+- 📚 **Year:** 2nd Year | Section: 2CSE34
+- 🆔 **Roll No.:** 25SCS1003003944
+- 🎓 **Batch:** 2025–2029
 
 ---
 
@@ -31,11 +31,10 @@ This repository contains the work completed during the **BCG GenAI Job Simulatio
 The simulation involved working with financial data and developing a prototype financial chatbot.
 
 The project was divided into two major tasks:
-
 1. **Financial Data Analysis**
 2. **Financial Chatbot Prototype**
 
-The overall workflow can be summarized as:
+### Overall Workflow
 
 ```text
 SEC 10-K Filings
@@ -53,121 +52,102 @@ Rule-Based Financial Chatbot
 Testing & Documentation
 ```
 
+> **Note:** This is a BCG Job Simulation / Virtual Experience completed through Forage. It is not employment or an internship with BCG.
 
-📊 Task 1 – Financial Data Analysis
-Objective
+---
 
+## 📊 Task 1 – Financial Data Analysis
+
+### Objective
 Analyze financial information from the annual 10-K filings of:
+- **Microsoft**
+- **Apple**
+- **Tesla**
 
-Microsoft
-Apple
-Tesla
+for **FY2023–FY2025**.
 
-for FY2023–FY2025.
+### Financial Metrics
 
-Financial Metrics
+| Metric | Description |
+| :--- | :--- |
+| **Total Revenue** | Company's total reported revenue |
+| **Net Income** | Reported net income |
+| **Total Assets** | Total assets reported on the balance sheet |
+| **Total Liabilities** | Total liabilities reported on the balance sheet |
+| **Operating Cash Flow** | Cash generated from operating activities |
 
-The following metrics were extracted and analyzed:
+### 🔍 Data Sources
+Financial information was obtained from company SEC 10-K filings through SEC EDGAR. 
 
-Metric	Description
-Total Revenue	Company's total reported revenue
-Net Income	Reported net income
-Total Assets	Total assets reported on the balance sheet
-Total Liabilities	Total liabilities reported on the balance sheet
-Operating Cash Flow	Cash generated from operating activities
-🔍 Data Sources
+The analysis also considered an important factor when comparing companies: **Fiscal year-end dates are different across Microsoft, Apple, and Tesla.** Therefore, fiscal years should not automatically be interpreted as identical calendar periods.
 
-Financial information was obtained from company SEC 10-K filings through SEC EDGAR.
-
-The analysis also considered an important factor when comparing companies:
-
-Fiscal year-end dates are different across Microsoft, Apple, and Tesla.
-
-Therefore, fiscal years should not automatically be interpreted as identical calendar periods.
-
-🛠️ Analysis Process
-
+### 🛠️ Analysis Process
 The financial analysis followed these steps:
+1. Identify relevant 10-K filings.
+2. Extract required financial metrics.
+3. Organize the data in Excel.
+4. Convert the dataset into CSV format.
+5. Load the data using Pandas.
+6. Perform data aggregation and grouping.
+7. Calculate year-over-year changes.
+8. Calculate selected financial ratios.
+9. Analyze trends across companies.
+10. Document observations and conclusions.
 
-Identify relevant 10-K filings.
-Extract required financial metrics.
-Organize the data in Excel.
-Convert the dataset into CSV format.
-Load the data using Pandas.
-Perform data aggregation and grouping.
-Calculate year-over-year changes.
-Calculate selected financial ratios.
-Analyze trends across companies.
-Document observations and conclusions.
-📈 Key Observations
-Microsoft
+### 📈 Key Observations
 
-Microsoft showed strong growth across the analyzed period, with increases in:
+**Microsoft**
+- Showed strong growth across the analyzed period, with increases in Revenue, Net Income, and Operating Cash Flow.
+- The analysis also showed expansion of the balance sheet alongside continued investment in infrastructure and technology.
 
-Revenue
-Net Income
-Operating Cash Flow
+**Apple**
+- Experienced a relatively small decline in revenue and net income during FY2024, followed by a strong recovery in FY2025.
+- Maintained strong operating cash flow relative to net income.
 
-The analysis also showed expansion of the balance sheet alongside continued investment in infrastructure and technology.
+**Tesla**
+- Revenue remained relatively stable across the period, while net income declined significantly.
+- Highlighted the importance of looking beyond revenue alone when evaluating financial performance.
 
-Apple
+**General Insights**
+- Raw financial figures alone do not provide the complete picture.
+- YoY changes provide useful context.
+- Financial ratios can reveal relationships between different metrics.
+- Fiscal-year differences matter when comparing companies.
+- Accurate data extraction and provenance are important in financial analysis.
 
-Apple experienced a relatively small decline in revenue and net income during FY2024, followed by a strong recovery in FY2025.
+---
 
-The company also maintained strong operating cash flow relative to net income.
+## 🤖 Task 2 – Financial Chatbot
 
-Tesla
+### Objective
+Develop a beginner-friendly Python financial chatbot using the dataset created during Task 1. The chatbot uses rule-based logic rather than machine learning or a generative AI model.
 
-Tesla's revenue remained relatively stable across the period, while net income declined significantly.
-
-The analysis highlighted the importance of looking beyond revenue alone when evaluating financial performance.
-
-General Insights
-
-The analysis demonstrated that:
-
-Raw financial figures alone do not provide the complete picture.
-YoY changes provide useful context.
-Financial ratios can reveal relationships between different metrics.
-Fiscal-year differences matter when comparing companies.
-Accurate data extraction and provenance are important in financial analysis.
-🤖 Task 2 – Financial Chatbot
-Objective
-
-Develop a beginner-friendly Python financial chatbot using the dataset created during Task 1.
-
-The chatbot uses rule-based logic rather than machine learning or a generative AI model.
-
-💬 Supported Queries
-
+### 💬 Supported Queries
 The chatbot supports predefined queries related to:
+- Total Revenue
+- Net Income Change
+- Total Assets
+- Total Liabilities
+- Cash Flow from Operating Activities
 
-Total Revenue
-Net Income Change
-Total Assets
-Total Liabilities
-Cash Flow from Operating Activities
+**Supported Companies & Years:**
+- Microsoft, Apple, Tesla
+- FY2023, FY2024, FY2025
 
-It supports:
+### ⚙️ Chatbot Features
+- User input through Python `input()`
+- Company detection
+- Fiscal year detection (Default FY2025 when a year is not specified)
+- Financial metric detection
+- `if-elif-else` based query handling
+- Missing-company handling
+- Unsupported-query fallback
+- Predefined financial responses
+- Automated testing
 
-Microsoft
-Apple
-Tesla
-FY2023
-FY2024
-FY2025
-⚙️ Chatbot Features
-User input through Python input()
-Company detection
-Fiscal year detection
-Default FY2025 when a year is not specified
-Financial metric detection
-if-elif-else based query handling
-Missing-company handling
-Unsupported-query fallback
-Predefined financial responses
-Automated testing
-🏗️ Chatbot Architecture
+### 🏗️ Chatbot Architecture
+
+```text
              User Query
                   │
                   ▼
@@ -185,22 +165,18 @@ Automated testing
                   │
                   ▼
           Financial Response
-🧪 Testing
+```
 
-The chatbot was tested using a separate test script.
+### 🧪 Testing
+The chatbot was tested using a separate test script. Testing included normal financial queries, different companies, different fiscal years, missing company inputs, and unsupported or unrelated queries. 
 
-Testing included:
+Test results are stored in: `test_results.txt`
 
-Normal financial queries
-Different companies
-Different fiscal years
-Missing company inputs
-Unsupported or unrelated queries
+---
 
-Test results are stored in:
+## 📁 Repository Structure
 
-test_results.txt
-📁 Repository Structure
+```text
 .
 ├── financial_chatbot.py
 ├── test_chatbot.py
@@ -216,104 +192,79 @@ test_results.txt
 │
 └── docs/
     └── project_documentation/
+```
 
-Adjust the folder names if your actual repository structure differs.
 
-💻 Technologies & Tools
-Programming
-Python
-Data Analysis
-Pandas
-Jupyter Notebook
-Excel
-CSV
-Financial Data
-SEC EDGAR
-Company 10-K filings
-Development
-Python dictionaries
-Conditional logic
-Automated testing
-Documentation
-📚 Skills Demonstrated
+---
+
+## 💻 Technologies & Tools
+
+- **Programming:** Python
+- **Data Analysis:** Pandas, Jupyter Notebook, Excel, CSV
+- **Financial Data:** SEC EDGAR, Company 10-K filings
+- **Development:** Python dictionaries, Conditional logic, Automated testing
+- **Documentation:** Markdown
+
+---
+
+## 📚 Skills Demonstrated
 
 This project provided practical experience in:
+- Financial data extraction & statement analysis
+- Python programming & Pandas data analysis
+- Excel and CSV data handling
+- Data cleaning, structuring, and Year-over-year analysis
+- Financial ratios
+- Rule-based chatbot development
+- Testing and debugging
+- Technical documentation & data provenance
+- Working with SEC filings
 
-Financial data extraction
-Financial statement analysis
-Python programming
-Pandas data analysis
-Excel and CSV data handling
-Data cleaning and structuring
-Year-over-year analysis
-Financial ratios
-Rule-based chatbot development
-Testing and debugging
-Technical documentation
-Data provenance
-Working with SEC filings
+*It also provided an understanding of the difference between a rule-based chatbot and a true AI/ML/GenAI system.*
 
-It also provided an understanding of the difference between a rule-based chatbot and a true AI/ML/GenAI system.
+---
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 
-The current chatbot is intentionally a simple rule-based prototype.
+The current chatbot is intentionally a simple rule-based prototype. Potential improvements include:
+- Automated SEC/XBRL financial data extraction
+- NLP-based query understanding
+- Retrieval-Augmented Generation (RAG)
+- Integration with live financial data
+- Support for more companies and financial metrics/ratios
+- Conversational context
+- Source citations in chatbot responses
+- Visualization generation from user queries
+- GenAI-powered financial question answering
 
-Potential improvements include:
+*(These are future improvements and are not part of the current implementation.)*
 
-Automated SEC/XBRL financial data extraction
-NLP-based query understanding
-Retrieval-Augmented Generation (RAG)
-Integration with live financial data
-Support for more companies
-More financial metrics and ratios
-Conversational context
-Source citations in chatbot responses
-Visualization generation from user queries
-GenAI-powered financial question answering
+---
 
-These are future improvements and are not part of the current implementation.
-
-🎯 Project Takeaway
+## 🎯 Project Takeaway
 
 The project demonstrates a complete workflow from:
-
-Financial Documents
-       ↓
-Data Extraction
-       ↓
-Data Analysis
-       ↓
-Financial Insights
-       ↓
-Python Application
-       ↓
-Testing
-       ↓
-Documentation
+`Financial Documents` → `Data Extraction` → `Data Analysis` → `Financial Insights` → `Python Application` → `Testing` → `Documentation`
 
 It provided hands-on exposure to combining financial analysis, Python programming, data processing, and basic AI-oriented application development.
 
-📜 Program
+---
 
-BCG GenAI Job Simulation
-Completed through Forage
+## 📜 Program Details
 
-The experience focused on applying data analysis and AI-related problem-solving concepts to a financial use case.
+- **Program:** BCG GenAI Job Simulation
+- **Platform:** Forage
 
-🔗 References
-SEC EDGAR – Financial filings
-Microsoft Annual Reports
-Apple Annual Reports
-Tesla Annual Reports
-Python Documentation
-Pandas Documentation
-Jupyter Documentation
-Forage – BCG GenAI Job Simulation
-👤 Author
+*The experience focused on applying data analysis and AI-related problem-solving concepts to a financial use case.*
 
-Ritesh Kumar Yadav
-B.Tech CSE | IILM University, Greater Noida
-Section: 2CSE34
-Roll No.: 25SCS1003003944
-Batch: 2025–2029
+---
+
+## 🔗 References
+- SEC EDGAR – Financial filings
+- Microsoft Annual Reports
+- Apple Annual Reports
+- Tesla Annual Reports
+- Python Documentation
+- Pandas Documentation
+- Jupyter Documentation
+- Forage – BCG GenAI Job Simulation
