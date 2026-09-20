@@ -52,8 +52,6 @@ Rule-Based Financial Chatbot
 Testing & Documentation
 ```
 
-> **Note:** This is a BCG Job Simulation / Virtual Experience completed through Forage. It is not employment or an internship with BCG.
-
 ---
 
 ## 📊 Task 1 – Financial Data Analysis
